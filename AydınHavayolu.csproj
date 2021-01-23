@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E19D88D8-06F7-4C2E-8725-B65B75F2A030}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AydınHavayolu</RootNamespace>
+    <AssemblyName>AydınHavayolu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bilet_satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilet_satis.Designer.cs">
+      <DependentUpon>Bilet_satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donus_ucus_listele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donus_ucus_listele.Designer.cs">
+      <DependentUpon>Donus_ucus_listele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eski_ucus_listele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eski_ucus_listele.Designer.cs">
+      <DependentUpon>Eski_ucus_listele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris_Sayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris_Sayfasi.Designer.cs">
+      <DependentUpon>Giris_Sayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici_giris.Designer.cs">
+      <DependentUpon>Kullanici_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri_ekle.Designer.cs">
+      <DependentUpon>Musteri_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri_sec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri_sec.Designer.cs">
+      <DependentUpon>Musteri_sec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pilot_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pilot_ekle.Designer.cs">
+      <DependentUpon>Pilot_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pilot_Bilgisi_Guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pilot_Bilgisi_Guncelle.Designer.cs">
+      <DependentUpon>Pilot_Bilgisi_Guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ucak_ekle_duzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ucak_ekle_duzenle.Designer.cs">
+      <DependentUpon>Ucak_ekle_duzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucus_ekle_duzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucus_ekle_duzenle.Designer.cs">
+      <DependentUpon>ucus_ekle_duzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gidis_Ucus_listele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gidis_Ucus_listele.Designer.cs">
+      <DependentUpon>Gidis_Ucus_listele.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bilet_satis.resx">
+      <DependentUpon>Bilet_satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donus_ucus_listele.resx">
+      <DependentUpon>Donus_ucus_listele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eski_ucus_listele.resx">
+      <DependentUpon>Eski_ucus_listele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris_Sayfasi.resx">
+      <DependentUpon>Giris_Sayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici_giris.resx">
+      <DependentUpon>Kullanici_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri_ekle.resx">
+      <DependentUpon>Musteri_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri_sec.resx">
+      <DependentUpon>Musteri_sec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pilot_Bilgisi_Guncelle.resx">
+      <DependentUpon>Pilot_Bilgisi_Guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pilot_ekle.resx">
+      <DependentUpon>Pilot_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ucak_ekle_duzenle.resx">
+      <DependentUpon>Ucak_ekle_duzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucus_ekle_duzenle.resx">
+      <DependentUpon>ucus_ekle_duzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gidis_Ucus_listele.resx">
+      <DependentUpon>Gidis_Ucus_listele.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
